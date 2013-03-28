@@ -1,3 +1,13 @@
 /init.el~
 /auto-save-list/
 /elisp/
+/cedet/.bzrignore
+/cedet/.ede-ignore
+/cedet/INSTALL
+/cedet/.cvsignore
+/cedet/CEDET_STYLE_GUIDE
+/cedet/Makefile
+/cedet/Makefile.wwwinfo
+/cedet/
+/ede-projects.el
+semanticdb

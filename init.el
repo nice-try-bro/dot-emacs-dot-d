@@ -30,5 +30,16 @@
       (normal-top-level-add-to-load-path '("."))
       (normal-top-level-add-subdirs-to-load-path))
 
+;; cedet
+(load-file "~/.emacs.d/cedet/cedet-devel-load.el")
+
 ;; magit
 (require 'magit)
+
+;; QT settings
+(when (equal system-type 'windows-nt)
+  (setenv "QTDIR" "D:/develop/qt/5.0.1/5.0.1/msvc2010/")
+  (setenv "QMAKESPEC"  "win32-msvc2010")
+  (setenv "PATH" (concat (concat (getenv "QTDIR") "bin") ";" (getenv "PATH")))
+  (setenv "PATH" (concat (concat (getenv "QTDIR") "lib") ";" (getenv "PATH")))
+  )
