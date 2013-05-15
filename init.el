@@ -31,7 +31,10 @@
       (normal-top-level-add-subdirs-to-load-path))
 
 ;; cedet
-(load-file "~/.emacs.d/cedet/cedet-devel-load.el")
+(when (string= (system-name) "jgrobik")
+(load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.el"))
+(when (string= (system-name) "UF-OTP10")
+(load-file "~/.emacs.d/cedet/cedet-devel-load.el"))
 
 ;; magit
 (require 'magit)
